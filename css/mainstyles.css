@@ -10,6 +10,7 @@
     --color-light-grey: #757575;
     --color-dark-grey: #2F303A;
     --letter-spacing-normal: 0.03em;
+    --color-social-icon: #AFB1B8;
 
 }
 a {
@@ -56,6 +57,7 @@ ul {
     display: flex; 
     align-items: center; 
     justify-content: space-between;
+   
 }
 .page-nav {
     display: flex;
@@ -126,15 +128,23 @@ ul {
     
 /* ===================ШАПКА==================== */
     .section-decision {
-        background-color: var(--color-dark-grey);
+        
         color: var(--color-white);
         font-family: var(--primary-font);
         padding-top: 200px;
         padding-bottom: 200px;
         display: block;
         text-align: center;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url("../images/background-header.jpg");
+       
+        /* background-size: 1600px 600px; */
+        background-size: cover;
+        background-color: var(--color-dark-grey);
     }
+    .decision {
     
+    }
     .title-decision {
         font-family: var(--primary-font);
         font-weight: 900;
@@ -272,6 +282,40 @@ ul {
 .position {
     font-weight: 400;
     color: var(--color-light-grey); 
+
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+.social-link-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    margin-top: 16px;
+}
+.social-link-item:hover,
+.social-link-item:focus {
+    background-color: var(--color-light-blue);
+    color: var(--color-white);
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+   
+
+}
+.social-link-item:hover .social-icon,
+.social-link-item:focus .social-icon {
+    /* fill: currentColor #ffff; */
+    
 }
 /* ==================КОМАНДА===================*/
 
