@@ -188,6 +188,13 @@ ul {
         clip-path: inset(50%);
         margin: -1px;
     }
+    .priorities-list {
+        display: flex;
+        column-gap: 30px;
+    }
+    .prioprities-link-item {
+        background-color: #F5F4FA;
+    }
 
     .priorities {
         font-family: var(--primary-font);
@@ -298,6 +305,7 @@ ul {
     height: 44px;
     border-radius: 50%;
     background-color: var(--color-white);
+    color: var(--color-white);
     margin-top: 16px;
 }
 .social-link-item:hover,
@@ -308,13 +316,13 @@ ul {
 .social-icon {
     width: 20px;
     height: 20px;
-    fill: currentColor;
+    color: currentColor;
    
 
 }
 .social-link-item:hover .social-icon,
 .social-link-item:focus .social-icon {
-    /* fill: currentColor #ffff; */
+    color: currentColor;
     
 }
 /* ==================КОМАНДА===================*/
