@@ -108,10 +108,11 @@ ul {
 .contacts-list {
     display: flex;
 }
-.active-link:hover, .active-link:focus { color:var(--color-dark-blue)}
+.item-link:hover, 
+.item-link:focus { color:var(--color-dark-blue)}
 
 .item-email {
-    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .item-link {
@@ -122,6 +123,31 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.icon-list-item {
+
+}
+.item-link-icon {
+   margin-right: 10px;
+}
+.item-link-icon:hover .contact-email-icon,
+.item-link-icon:focus .contact-email-icon {
+    fill: var(--color-light-blue)
+}
+.item-link-icon:hover .contact-telephone-icon,
+.item-link-icon:focus .contact-telephone-icon {
+    fill: var(--color-light-blue)
+}
+.contact-email-icon {
+    width: 16px;
+    height: 12px;
+    fill: var(--color-light-grey);
+}
+.contact-telephone-icon {
+    width: 10px;
+    height: 16px;
+    fill: var(--color-light-grey);
+}
+
 /* =========ХЕДЕР ГОЛОВНОЇ СТОРІНКИ=================*/
     
  /* ======================МЕЙН================== */
@@ -138,7 +164,6 @@ ul {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
         url("../images/background-header.jpg");
        
-        /* background-size: 1600px 600px; */
         background-size: cover;
         background-color: var(--color-dark-grey);
     }
@@ -188,12 +213,22 @@ ul {
         clip-path: inset(50%);
         margin: -1px;
     }
-    .priorities-list {
+    .features-list {
         display: flex;
         column-gap: 30px;
     }
-    .prioprities-link-item {
+    .features-link-item {
         background-color: #F5F4FA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+    .features-icon {
+        width: 70px;
+        height: 70px;
     }
 
     .priorities {
@@ -305,36 +340,69 @@ ul {
     height: 44px;
     border-radius: 50%;
     background-color: var(--color-white);
-    color: var(--color-white);
+    fill: var(--color-social-icon);
     margin-top: 16px;
 }
 .social-link-item:hover,
 .social-link-item:focus {
     background-color: var(--color-light-blue);
-    color: var(--color-white);
+    fill: var(--color-white);
 }
 .social-icon {
     width: 20px;
     height: 20px;
-    color: currentColor;
    
 
 }
 .social-link-item:hover .social-icon,
 .social-link-item:focus .social-icon {
-    color: currentColor;
+    /* color: currentColor; */
     
 }
 /* ==================КОМАНДА===================*/
+
+/* <!-- ================ПОСТІЙНІ КЛІЄНТИ========================== --> */
+.customer-list {
+    display: flex;
+    column-gap: 30px;
+}
+.customer-link-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    margin-top: 50px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.customer-link-item:hover .customer-icon,
+.customer-link-item:focus .customer-icon {
+    fill: var(--color-light-blue)
+}
+.customer-link-item:hover,
+.customer-link-item:focus {
+    border: 1px solid #2196F3;
+}
+.customer-icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+
+
+/* <!-- ================ПОСТІЙНІ КЛІЄНТИ========================== --> */
 
 /* ==============ФУТЕР================================ */
 .footer {
     background-color: var(--color-dark-grey);
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
     }
 .fotter-a {
     font-style: normal;
+
 }
 
 .footer-web-studio {
@@ -377,6 +445,46 @@ ul {
 }
 .bottom-contacts {
     color: #ffffff99;
+}
+.social-title {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--letter-spacing-normal);
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer-social-list {
+    display: flex;
+    column-gap: 10px;
+}
+.footer-social-link-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--color-dark-grey);
+    fill: var(--color-white);
+    margin-top: 20px;
+}
+.footer-social-link-item:hover,
+.footer-social-link-item:focus {
+    background-color: var(--color-light-blue);
+    fill: var(--color-white);
+}
+.footer-social-icon {
+    width: 20px;
+    height: 20px;
+  
+
+}
+.footer-social-link-item:hover .social-icon,
+.footer-social-link-item:focus .social-icon {
+    /* color: currentColor; */
+    
 }
 /* ==============ФУТЕР================================ */
 
@@ -524,12 +632,13 @@ color: var(--color-white); }
 /* ====================ФУТЕР ПОРТФОЛІО============*/
 .footer {
     background-color: var(--color-dark-grey);
-}
-.footer-a {
-    font-style:normal;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.footer-a {
+    font-style:normal;
+ }   
 .f-first-part {
     color: var(--color-light-blue);
 }
