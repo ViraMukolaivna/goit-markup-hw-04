@@ -99,22 +99,18 @@ ul {
     letter-spacing: 0.02em;
     color: var(--color-dark);
 }
-
 .current {
     color: var(--color-light-blue);
 }
-
 /* контакти */
 .contacts-list {
     display: flex;
 }
 .item-link:hover, 
 .item-link:focus { color:var(--color-dark-blue)}
-
 .item-email {
     margin-right: 50px;
 }
-
 .item-link {
     font-family: var(--primary-font);
     color: var(--color-light-grey);
@@ -123,7 +119,6 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
 .item-link-icon {
    margin-right: 10px;
 }
@@ -136,18 +131,18 @@ ul {
     fill: var(--color-light-blue)
 }
 .contact-item {
-    display: flex;
-    justify-content: space-around;
 }
 .contact-email-icon {
     width: 16px;
     height: 12px;
     fill: var(--color-light-grey);
+    margin-right: 10px;
 }
 .contact-telephone-icon {
     width: 10px;
     height: 16px;
     fill: var(--color-light-grey);
+    margin-right: 10px;
 }
 
 /* =========ХЕДЕР ГОЛОВНОЇ СТОРІНКИ=================*/
@@ -595,9 +590,9 @@ color: var(--color-white); }
 .card-project-link {
     display: block;
 }
-card-project-link:hover { border: 1px solid #EEEEEE;
+.card-project-link:hover { border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
-card-project-link:focus { border: 1px solid #EEEEEE;
+.card-project-link:focus { border: 1px solid #EEEEEE;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
     
 .info-project {
