@@ -123,19 +123,21 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.icon-list-item {
 
-}
 .item-link-icon {
    margin-right: 10px;
 }
-.item-link-icon:hover .contact-email-icon,
-.item-link-icon:focus .contact-email-icon {
+.item-link:hover .contact-email-icon,
+.item-link:focus .contact-email-icon {
     fill: var(--color-light-blue)
 }
-.item-link-icon:hover .contact-telephone-icon,
-.item-link-icon:focus .contact-telephone-icon {
+.item-link:hover .contact-telephone-icon,
+.item-link:focus .contact-telephone-icon {
     fill: var(--color-light-blue)
+}
+.contact-item {
+    display: flex;
+    justify-content: space-around;
 }
 .contact-email-icon {
     width: 16px;
@@ -153,112 +155,106 @@ ul {
  /* ======================МЕЙН================== */
     
 /* ===================ШАПКА==================== */
-    .section-decision {
+.section-decision {
         
-        color: var(--color-white);
-        font-family: var(--primary-font);
-        padding-top: 200px;
-        padding-bottom: 200px;
-        display: block;
-        text-align: center;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url("../images/background-header.jpg");
-       
-        background-size: cover;
-        background-color: var(--color-dark-grey);
-    }
-    .decision {
-    
-    }
-    .title-decision {
-        font-family: var(--primary-font);
-        font-weight: 900;
-        font-size: 44px;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        margin-bottom: 30px;
-    }
-
-    .button-order {
-        background-color: var(--color-light-blue);
-        color: var(--color-white);
-        font-family: var(--primary-font);
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        border: 0;
-        padding-top: 10px;
-        padding-left: 32px;
-        padding-bottom: 10px;
-        padding-right: 32px;
-    }
+    color: var(--color-white);
+    font-family: var(--primary-font);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url("../images/background-header.jpg");
+    background-size: cover;
+    background-color: var(--color-dark-grey);
+    max-width: 1600px; 
+    margin: 0 auto; 
+}
+.decision {
+}
+.title-decision {
+    font-family: var(--primary-font);
+    font-weight: 900;
+    font-size: 44px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.button-order {
+    background-color: var(--color-light-blue);
+    color: var(--color-white);
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    padding-top: 10px;
+    padding-left: 32px;
+    padding-bottom: 10px;
+    padding-right: 32px;
+}
     .button-order:hover { background-color:var(--color-dark-blue); }
 /* ===================ШАПКА==================== */
 
 /* ==========ОСОБЛИВОСТІ=========================== */
 
-    .head-title-priorities, 
-    .visually-hidden {
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        margin: -1px;
-    }
-    .features-list {
-        display: flex;
-        column-gap: 30px;
-    }
-    .features-link-item {
-        background-color: #F5F4FA;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 270px;
-        height: 120px;
-        margin-bottom: 30px;
-    }
-    .features-icon {
-        width: 70px;
-        height: 70px;
-    }
+.head-title-priorities, 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+    
+.features-link-item {
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+.features-icon {
+     width: 70px;
+    height: 70px;
+}
 
-    .priorities {
-        font-family: var(--primary-font);
-        font-size: 14px;
-        letter-spacing: var(--letter-spacing-normal);
-    }
+.priorities {
+    font-family: var(--primary-font);
+    font-size: 14px;
+    letter-spacing: var(--letter-spacing-normal);
+}
     
-    .priorities-list {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 30px;
-    }
-    
-    .item-priorities {
-        flex-basis: calc((100% - 90px) / 4);
-    }
-    
-    .title {   
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 16px;
-        text-transform: uppercase;
-        color: var(--color-dark);
-    }
-    .text {   
-        line-height: 24px;            
-        color: var(--color-light-grey);
-        margin-top: 10px;
-    }
+.priorities-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.item-priorities {
+    flex-basis: calc((100% - 90px) / 4);
+}
+.title {   
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+.text {   
+    line-height: 24px;            
+    color: var(--color-light-grey);
+    margin-top: 10px;
+}
 /* ==========ОСОБЛИВОСТІ=========================== */
 
 
@@ -331,6 +327,7 @@ ul {
     display: flex;
     justify-content: center;
     column-gap: 10px;
+    margin-top: 16px;
 }
 .social-link-item {
     display: flex;
@@ -341,7 +338,7 @@ ul {
     border-radius: 50%;
     background-color: var(--color-white);
     fill: var(--color-social-icon);
-    margin-top: 16px;
+    
 }
 .social-link-item:hover,
 .social-link-item:focus {
@@ -351,28 +348,23 @@ ul {
 .social-icon {
     width: 20px;
     height: 20px;
-   
-
-}
-.social-link-item:hover .social-icon,
-.social-link-item:focus .social-icon {
-    /* color: currentColor; */
-    
 }
 /* ==================КОМАНДА===================*/
+
 
 /* <!-- ================ПОСТІЙНІ КЛІЄНТИ========================== --> */
 .customer-list {
     display: flex;
     column-gap: 30px;
 }
+.customer-list-item {
+    flex-basis: calc((100% - 150px) / 6);
+}
 .customer-link-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
     height: 92px;
-    margin-top: 50px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -402,7 +394,11 @@ ul {
     }
 .fotter-a {
     font-style: normal;
+    margin-right: 70px;
 
+}
+.footer-block {
+    display: flex;
 }
 
 .footer-web-studio {
@@ -454,6 +450,8 @@ ul {
     letter-spacing: var(--letter-spacing-normal);
     text-transform: uppercase;
     color: #FFFFFF;
+    padding-top: 12px;
+    margin-bottom: 20px;
 }
 .footer-social-list {
     display: flex;
@@ -467,8 +465,9 @@ ul {
     height: 44px;
     border-radius: 50%;
     background-color: var(--color-dark-grey);
+    background: rgba(255, 255, 255, 0.1); 
     fill: var(--color-white);
-    margin-top: 20px;
+    
 }
 .footer-social-link-item:hover,
 .footer-social-link-item:focus {
@@ -478,14 +477,8 @@ ul {
 .footer-social-icon {
     width: 20px;
     height: 20px;
-  
+}
 
-}
-.footer-social-link-item:hover .social-icon,
-.footer-social-link-item:focus .social-icon {
-    /* color: currentColor; */
-    
-}
 /* ==============ФУТЕР================================ */
 
 
@@ -599,6 +592,14 @@ color: var(--color-white); }
 .card-project {
     flex-basis: calc((100% - 60px) / 3);
 }
+.card-project-link {
+    display: block;
+}
+card-project-link:hover { border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+card-project-link:focus { border: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+    
 .info-project {
     display: block;
     padding-left: 24px;
